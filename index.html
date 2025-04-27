@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SUFI GUIDANCE™ - Dubai Free Clinic</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <style>
+    body {
+      background: url('https://images.unsplash.com/photo-1604085570455-0e8e0f1aa9a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+
+<body class="relative flex flex-col items-center justify-center text-white">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 overlay"></div>
+
+  <!-- Main Content -->
+  <div class="relative z-10 flex flex-col items-center text-center p-8 space-y-6">
+
+    <!-- UAE Flag -->
+    <img id="flag" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg" alt="UAE Flag" class="w-20 h-14 rounded shadow-lg">
+
+    <!-- Logo -->
+    
+     
+<!-- Logo -->
+<img id="logo" src="./public/logo.jpeg" alt="Logo" class="w-24 h-24 rounded-full border-4 border-yellow-400 mt-4 shadow-lg">
+
+
+
+
+
+    
+
+    <!-- Heading -->
+    <h1 id="mainHeading" class="text-4xl md:text-5xl font-extrabold mt-4">SUFI GUIDANCE™</h1>
+
+    <h2 id="clinicHeading" class="text-2xl md:text-3xl font-bold">FREE CLINIC</h2>
+    <p id="dateEvent" class="text-lg md:text-2xl italic">Dubai Vibe | 28th April Monday</p>
+
+    <!-- Card Section -->
+    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6 space-y-4 max-w-md shadow-lg mt-6">
+
+      <h3 id="connectTitle" class="text-2xl font-bold">Connect with Raza Ali Shah Al-Abidi</h3>
+      <p class="text-md font-light">Numerologist | Psychic Reader | Gemologist</p>
+
+      <div class="flex flex-wrap justify-center gap-4 mt-4">
+        <span class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">Love</span>
+        <span class="bg-pink-400 text-black px-4 py-2 rounded-full font-bold">Joy</span>
+        <span class="bg-green-400 text-black px-4 py-2 rounded-full font-bold">Laughter</span>
+        <span class="bg-blue-400 text-black px-4 py-2 rounded-full font-bold">Happiness</span>
+      </div>
+
+      <p class="mt-6 text-sm font-semibold">Group Callings</p>
+      <p class="text-sm italic">Live on SUFI GUIDANCE Channel (YouTube)</p>
+
+      <!-- Links Button -->
+      <button onclick="openModal()" class="block mt-4 bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded-full transition duration-300">
+        Open Links
+      </button>
+
+      <p class="mt-6 text-sm">Official Payment Line: <span class="font-bold">+44 7909 286400</span></p>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-8 text-xs text-gray-300">
+      Podcast 1117 | UK | Dubai UAE | USA
+    </footer>
+
+    <!-- Play Button -->
+    <button onclick="playSound()" class="mt-8 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+      YE WO JAGA HAI JAHAN BAAT BANTI HAI
+    </button>
+
+  </div>
+
+  >
+
+
+
+<!-- Audio -->
+<audio id="pageSound" src="./public/WhatsApp%20Audio%202025-03-13%20at%2010.09.25%20PM.mp4"></audio>
+
+
+  <!-- Modal -->
+  <div id="linksModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+    <div class="bg-white text-black rounded-lg p-8 max-w-md w-full relative">
+
+      <button onclick="closeModal()" class="absolute top-2 right-2 text-black text-2xl font-bold">&times;</button>
+
+      <h2 class="text-2xl font-bold mb-6 text-center">Our Links</h2>
+
+      <div class="flex flex-col space-y-4 text-center">
+        <a href="https://en.m.wikipedia.org/wiki/Shah_Ji" target="_blank" class="text-blue-600 underline">Wikipedia Barey Shah Ji</a>
+        <a href="https://sufiguidance.com" target="_blank" class="text-blue-600 underline">Visit Our Website</a>
+        <a href="https://youtube.com/c/SufiGuidanceChannel" target="_blank" class="text-blue-600 underline">Subscribe To Main Channel</a>
+        <a href="https://instagram.com/sufiguidance" target="_blank" class="text-blue-600 underline">Insta (Official): Sufi Guidance</a>
+        <a href="https://facebook.com/groups/sufiguidancewazaifsgc" target="_blank" class="text-blue-600 underline">Group: Sufi Guidance™️ Wazaif</a>
+        <a href="https://web.facebook.com/groups/sufiguidancehungamasgc" target="_blank" class="text-blue-600 underline">FB Fun: Sufi Guidance™️ Hungama</a>
+        <a href="https://tiktok.com/@sufiguidanceofficial" target="_blank" class="text-blue-600 underline">TikTok: @sufiguidanceofficial</a>
+        <a href="https://facebook.com/groups/dreaminterpretationsandnumerology" target="_blank" class="text-blue-600 underline">FB Group: Numerology & Dream</a>
+        <a href="https://facebook.com/groups/300419432501807" target="_blank" class="text-blue-600 underline">Dream & Numerology FB Group</a>
+        <a href="https://web.facebook.com/SufiGuidanceSGC" target="_blank" class="text-blue-600 underline">FB Page: Sufi Guidance™️</a>
+        <a href="https://whatsapp.com/channel/0029VaH2MMzAYlULrZb1X03a" target="_blank" class="text-blue-600 underline">Numerology Channel WhatsApp</a>
+        <a href="https://whatsapp.com/channel/0029VaAon23CnA7pc8XOGP2m" target="_blank" class="text-blue-600 underline">WhatsApp Broadcast Channel</a>
+        <a href="https://wa.me/447909286400" target="_blank" class="text-blue-600 underline">Official WhatsApp Number</a>
+        <a href="https://instagram.com/raza.ali.shah.al.abidi" target="_blank" class="text-blue-600 underline">Instagram (Personal Account)</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GSAP Animations and JS -->
+  <script>
+    // GSAP Animations
+
+    gsap.from("#flag", { 
+      duration: 1, 
+      y: -50, 
+      opacity: 0, 
+      ease: "bounce" 
+    });
+
+    gsap.to("#flag", { 
+      rotation: 5, 
+      yoyo: true, 
+      repeat: -1, 
+      duration: 2, 
+      ease: "sine.inOut", 
+      transformOrigin: "50% 0%" 
+    });
+
+    gsap.from("#mainHeading", { duration: 1, x: -100, opacity: 0, delay: 1 });
+    gsap.from("#clinicHeading", { duration: 1, x: 100, opacity: 0, delay: 1.2 });
+    gsap.from("#dateEvent", { duration: 1, y: 30, opacity: 0, delay: 1.4 });
+    gsap.from("#connectTitle", { duration: 1, scale: 0.5, opacity: 0, delay: 1.6 });
+
+    gsap.from("#logo", { 
+      duration: 1.5, 
+      scale: 0, 
+      rotation: 360, 
+      opacity: 0, 
+      delay: 0.5, 
+      ease: "elastic.out(1, 0.5)" 
+    });
+
+    gsap.to("#logo", {
+      rotation: 5,
+      yoyo: true,
+      repeat: 1,
+      duration: 2,
+      ease: "sine.inOut",
+      transformOrigin: "50% 0%"
+    });
+
+    function openModal() {
+      document.getElementById('linksModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('linksModal').classList.add('hidden');
+    }
+
+    function playSound() {
+      const sound = document.getElementById('pageSound');
+      sound.play();
+    }
+  </script>
+
+</body>
+</html>
